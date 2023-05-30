@@ -83,7 +83,7 @@
     "caniuse-lite": "^1.0.30001481"
   },
   "scripts": {
-    "start": "tailwindcss -i ./home/assets/style.css -o ./home/assets/css/style.css --watch"
+    "start": "tailwindcss -i ./docs/assets/style.css -o ./docs/assets/css/style.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
