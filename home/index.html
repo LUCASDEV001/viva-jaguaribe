@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="/home/assets/css/style.css" />
+    <link rel="stylesheet" href="/home/assets/css/especific-styles.css" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="/home/assets/fontawesome/css/all.css" />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="/home/assets/img/favicon.png" type="image/jpg" />
+    <title>Viva RSF Jaguaribe - Osasco</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Head -->
+    <header>
+      <nav class="navbar nav-style">
+        <div>
+          <a href="#">
+            <img
+              src="/home/assets/img/logo.png"
+              alt="viva jaguaribe logo"
+              class="logo"
+              onload="this.style.opacity='1'"
+            />
+          </a>
+        </div>
+
+        <div class="menu-style" id="menu">
+          <ul class="list-position">
+            <li class="flex-shrink-0">
+              <a class="list" href="#inicio">Início</a>
+            </li>
+            <li class="flex-shrink-0">
+              <a class="list" href="#lazer">Lazer</a>
+            </li>
+            <li class="flex-shrink-0">
+              <a class="list" href="#proposito">Propósito</a>
+            </li>
+            <li class="flex-shrink-0">
+              <a class="list" href="#plantas">Plantas</a>
+            </li>
+            <li class="flex-shrink-0">
+              <a class="list" href="#tour">Fazer Tour</a>
+            </li>
+            <li class="flex-shrink-0">
+              <a class="list" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hamburger icon -->
+        <input type="checkbox" id="check" hidden onclick="toggleMenu()" />
+        <label for="check" class="mobile-icon">
+          <i id="hamburger-icon" class="fas fa-bars"></i>
+        </label>
+
+        <!-- Mobile menu -->
+        <div class="mobile-position" id="mobile-menu">
+          <ul class="mobile-list-position">
+            <li>
+              <a class="mobile-list-style" href="#inicio">Início</a>
+            </li>
+            <li>
+              <a class="mobile-list-style" href="#lazer">Lazer</a>
+            </li>
+            <li>
+              <a class="mobile-list-style" href="#proposito">Propósito</a>
+            </li>
+            <li>
+              <a class="mobile-list-style" href="#plantas">Plantas</a>
+            </li>
+            <li>
+              <a class="mobile-list-style" href="#tour">Fazer Tour</a>
+            </li>
+            <li>
+              <a class="mobile-list-style" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- WhatsApp Button -->
+      <a
+        href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+        class="float"
+        target="_blank"
+      >
+        <i class="fab fa-whatsapp my-float"></i>
+      </a>
+      <!--  -->
+
+      <div class="carousel-size" id="inicio">
+        <div class="relative">
+          <!-- Slider main container -->
+          <div class="swiper w-full">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <!-- Image 1 -->
+              <div class="swiper-slide">
+                <!-- Desktop -->
+                <img
+                  class="desktop-img"
+                  src="assets/img/slider/viva1.jpg"
+                  alt="imagem de background ilustrativo com foto de uma família e textos na tela"
+                />
+                <!-- Mobile -->
+                <img
+                  class="mobile-img"
+                  src="assets/img/slider/mobile1.jpg"
+                  alt="imagem de background ilustrativo com foto de uma família e textos na tela"
+                />
+              </div>
+              <!-- Image 2 -->
+              <div class="swiper-slide">
+                <!-- Desktop -->
+                <img
+                  class="desktop-img"
+                  src="assets/img/slider/viva2.jpg"
+                  alt="segunda imagem de background ilustrativo com foto de uma das torres e textos na tela"
+                />
+                <!-- Mobile -->
+                <img
+                  class="mobile-img"
+                  src="assets/img/slider/mobile2.jpg"
+                  alt="segunda imagem de background ilustrativo com foto de uma das torres e textos na tela"
+                />
+              </div>
+              <!-- Image 3 -->
+              <div class="swiper-slide">
+                <!-- Desktop -->
+                <img
+                  class="desktop-img"
+                  src="assets/img/slider/viva3.jpg"
+                  alt="terceira imagem de background ilustrativo com foto de uma área de piscina e textos na tela"
+                />
+                <!-- Mobile -->
+                <img
+                  class="mobile-img"
+                  src="assets/img/slider/mobile3.jpg"
+                  alt="terceira imagem de background ilustrativo com foto de uma área de piscina e textos na tela"
+                />
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="separator" id="lazer">
+        <h3>CONHEÇA NOSSA ÁREA DE LAZER</h3>
+      </div>
+
+      <!-- Photo Gallery -->
+      <section class="photo-container">
+        <div class="photo-gallery">
+          <div class="photo-space">
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/1.jpg"
+                alt=""
+                data-explanation="VIVA - CROSS FIT"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">CROSS FIT</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/2.jpg"
+                alt=""
+                data-explanation="VIVA - PORTARIA"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">PORTARIA</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/3.jpg"
+                alt=""
+                data-explanation="VIVA - SALÃO DE FESTAS"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">SALÃO DE FESTAS</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/4.jpg"
+                alt=""
+                data-explanation="VIVA - SALÃO DE FESTAS"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">SALÃO DE FESTAS</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/5.jpg"
+                alt=""
+                data-explanation="VIVA - TERRAÇO"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">TERRAÇO</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/6.jpg"
+                alt=""
+                data-explanation="VIVA - DELIVERY"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">DELIVERY</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/7.jpg"
+                alt=""
+                data-explanation="VIVA - QUADRA POLIESPORTIVA"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">QUADRA POLIESPORTIVA</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/8.jpg"
+                alt=""
+                data-explanation="VIVA - PISCINA"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">PISCINA</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/9.jpg"
+                alt=""
+                data-explanation="VIVA - REDÁRIO"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">REDÁRIO</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/10.jpg"
+                alt=""
+                data-explanation="VIVA - PISCINA"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">PISCINA</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/11.jpg"
+                alt=""
+                data-explanation="VIVA - CHURRASQUEIRA"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">CHURRASQUEIRA</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/12.jpg"
+                alt=""
+                data-explanation="VIVA - PLAY AVENTURA"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">PLAY AVENTURA</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/13.jpg"
+                alt=""
+                data-explanation="VIVA - PET PLACE"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">PET PLACE</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/14.jpg"
+                alt=""
+                data-explanation="VIVA - ESPAÇO GOURMET"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">ESPAÇO GOURMET</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/15.jpg"
+                alt=""
+                data-explanation="VIVA - BRINQUEDOTECA"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">BRINQUEDOTECA</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/16.jpg"
+                alt=""
+                data-explanation="VIVA - SPORT BAR"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">SPORT BAR</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/17.jpg"
+                alt=""
+                data-explanation="VIVA - BICICLETÁRIO"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">BICICLETÁRIO</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/18.jpg"
+                alt=""
+                data-explanation="VIVA - HALL SOCIAL"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">HALL SOCIAL</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/19.jpg"
+                alt=""
+                data-explanation="VIVA - PRAÇA DA FOGUEIRA"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">PRAÇA DA FOGUEIRA</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/20.jpg"
+                alt=""
+                data-explanation="VIVA - SALÃO DE JOGOS"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">SALÃO DE JOGOS</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/21.jpg"
+                alt=""
+                data-explanation="VIVA - ESPAÇO JUVENIL"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">ESPAÇO JUVENIL</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/22.jpg"
+                alt=""
+                data-explanation="VIVA - SALA DE REUNIÃO"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">SALA DE REUNIÃO</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/23.jpg"
+                alt=""
+                data-explanation="VIVA - LIVING DECORADO"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">LIVING DECORADO</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/24.jpg"
+                alt=""
+                data-explanation="VIVA - SALA DE GINÁSTICA"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">SALA DE GINÁSTICA</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/25.jpg"
+                alt=""
+                data-explanation="VIVA - ACADEMIA"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">ACADEMIA</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/26.jpg"
+                alt=""
+                data-explanation="VIVA - SPA"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">SPA</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/27.jpg"
+                alt=""
+                data-explanation="VIVA - ATELIÊ"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">ATELIÊ</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/28.jpg"
+                alt=""
+                data-explanation="VIVA - PET CARE"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">PET CARE</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/29.jpg"
+                alt=""
+                data-explanation="VIVA - PLAY INFANTIL"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">PLAY INFANTIL</span>
+              </div>
+            </div>
+            <div class="photo-relative">
+              <img
+                class="photo-size"
+                src="assets/img/photos/30.jpg"
+                alt=""
+                data-explanation="VIVA - FACHADA"
+              />
+              <div class="text-config" onclick="expandImage(this)">
+                <span class="text-position">FACHADA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DIVISÃO  -->
+      <div class="separator mt-20" id="proposito">
+        <h3>PROPÓSITO</h3>
+      </div>
+
+      <section class="purpose-container">
+        <div class="centralize-content">
+          <h1 class="main-text">
+            Viva Jaguaribe
+            <span class="text-yelloworange block"
+              >O seu condomínio dos sonhos se tornando realidade!</span
+            >
+          </h1>
+          <h3 class="rent-text">
+            (Renda bruta à partir de
+            <span class="text-blue-500">R$ 4.500</span>)
+          </h3>
+          <p class="info-text">
+            Procurando a mistura perfeita de conforto, segurança e localização
+            ideal? Não procure mais do que o Viva Jaguaribe! Nosso luxuoso
+            condomínio oferece uma variedade de apartamentos de um, dois e três
+            quartos, com tamanhos variando de
+            <span class="font-semibold">39 a 66m²</span>. Cada unidade vem com
+            uma vaga de estacionamento dedicada, e nosso complexo conta com uma
+            impressionante variedade de comodidades, incluindo uma área de lazer
+            completa. Com três torres de
+            <span class="font-semibold">27 e 28 andares</span>, nossas
+            <span class="font-semibold">491 unidades</span> ficam em um lote
+            espaçoso de <span class="font-semibold">6.052,94m²</span>, o Viva
+            Jaguaribe oferece um ambiente seguro e fechado. Eleve seu estilo de
+            vida - entre em contato conosco hoje mesmo para agendar uma visita e
+            experimentar o melhor em condomínio residencial.
+          </p>
+          <ul class="list-content">
+            <li class="list-items">
+              <span class="icons"
+                ><i class="fa-solid fa-shield-halved"></i></span
+              >Segurança
+            </li>
+            <li class="list-items">
+              <span class="icons"
+                ><i class="fa-solid fa-bell-concierge"></i></span
+              >Portaria 24h
+            </li>
+            <li class="list-items">
+              <span class="icons"><i class="fa-solid fa-door-open"></i></span
+              >Op. c/ Suíte
+            </li>
+            <li class="list-items">
+              <span class="icons"><i class="fa-solid fa-car"></i></span>1 e 2
+              Vagas
+            </li>
+            <li class="list-items">
+              <span class="icons"><i class="fa-solid fa-building"></i></span>3
+              Torres
+            </li>
+            <li class="list-items">
+              <span class="icons"><i class="fa-solid fa-ruler"></i></span>39,
+              49, 66m²
+            </li>
+            <li class="list-items">
+              <span class="icons"><i class="fa-solid fa-stairs"></i></span>27/28
+              ands
+            </li>
+            <li class="list-items">
+              <span class="icons"><i class="fa-solid fa-door-closed"></i></span
+              >1,2,3 Dorms
+            </li>
+          </ul>
+          <img
+            src="./assets/img/photos/viva-rsf-jaguaribe.webp"
+            class="img-space"
+            alt="Viva Jaguaribe Image"
+          />
+          <iframe
+            class="pt-5"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20688.85472734876!2d-46.78015805216087!3d-23.557401846104632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceff8092663379%3A0x48ab01bca65d13b1!2sAv.%20Don%C3%A1%20Blandina%20Ign%C3%AAz%20J%C3%BAlio%2C%20710%20-%20Jaguaribe%2C%20Osasco%20-%20SP%2C%2006050-120%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1683148450565!5m2!1spt-BR!2sus"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+          <p class="text-center text-gray-400">
+            Localização no Jaguaribe Osasco
+          </p>
+        </div>
+      </section>
+
+      <!-- Plantas Separate-->
+      <div class="separator" id="plantas">
+        <h3>NOSSAS PLANTAS</h3>
+      </div>
+
+      <!-- Plantas -->
+      <section class="plans-container">
+        <h3 class="second-text">
+          Nossos apartamentos vêm em uma variedade de tamanhos para atender às
+          suas necessidades
+        </h3>
+        <div class="img-content">
+          <div class="relative">
+            <img
+              src="./assets/img/photos/plantas-1.jpg"
+              alt="Image 1"
+              class="photo-size"
+              data-explanation="1 DORM"
+            />
+            <div class="img-open" onclick="expandImage(this)"></div>
+            <div class="internal-text">
+              <h3 class="internal-text-size">39m²</h3>
+            </div>
+          </div>
+          <div class="relative">
+            <img
+              src="./assets/img/photos/plantas-2.jpg"
+              alt="Image 2"
+              class="photo-size"
+              data-explanation="2 DORMS"
+            />
+            <div class="img-open" onclick="expandImage(this)"></div>
+            <div class="internal-text">
+              <h3 class="internal-text-size">49m²</h3>
+            </div>
+          </div>
+          <div class="relative">
+            <img
+              src="./assets/img/photos/plantas-3.jpg"
+              alt="Image 3"
+              class="photo-size"
+              data-explanation="3 DORMS"
+            />
+            <div class="img-open" onclick="expandImage(this)"></div>
+            <div class="internal-text">
+              <h3 class="internal-text-size">66m²</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tour Separate-->
+      <div class="separator" id="tour">
+        <h3>FAÇA UMA TOUR VIRTUAL</h3>
+      </div>
+
+      <!-- Virtual Tour -->
+      <section class="tour-content">
+        <iframe
+          loading="lazy"
+          src="https://www.vivarsfjaguaribe.com.br/tour-virtual/"
+          width="100%"
+          height="500px"
+          frameborder="0"
+          allowfullscreen=""
+          style="display: block"
+        ></iframe>
+      </section>
+
+      <!-- Contato Separate-->
+      <div class="separator" id="contato">
+        <h3>ENTRE EM CONTATO AGORA MESMO</h3>
+      </div>
+
+      <!-- Contato -->
+      <section class="contact-container">
+        <div class="contact-cetralize">
+          <div class="contact-space">
+            <div class="schedule-text">
+              <h4 class="wpp-text">Agende uma visita</h4>
+              <div>
+                <a href="#" class="wpp-button">
+                  <i class="fab fa-whatsapp mr-2"></i> Agendar
+                </a>
+              </div>
+            </div>
+            <div class="email-content">
+              <h3 class="email-text">Ou, se preferir</h3>
+              <div class="form-design">
+                <h4 class="form-text">Envie um E-mail</h4>
+                <form class="internal-form-space">
+                  <input
+                    type="text"
+                    class="text-box-border"
+                    placeholder="Nome"
+                  />
+                  <input
+                    type="email"
+                    class="text-box-border"
+                    placeholder="E-mail"
+                  />
+                  <input
+                    type="tel"
+                    class="text-box-border"
+                    placeholder="Telefone"
+                  />
+                  <input
+                    type="text"
+                    class="text-box-border"
+                    placeholder="Cidade"
+                  />
+                  <textarea
+                    class="textarea-border"
+                    rows="5"
+                    placeholder="Envie sua mensagem"
+                  ></textarea>
+                  <button type="submit" class="email-button">
+                    Enviar Mensagem
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-style">
+      <div class="footer-content">
+        © 2023 Todos os direitos reservados:
+        <a class="text-yelloworange" href="./index.html">Viva Jaguaribe</a>
+      </div>
+    </footer>
+
+    <!-- Cookie -->
+    <div
+      x-data="{ open: false }"
+      x-init="() => setTimeout(() => open = true, 500)"
+      class="cookie-container"
+    >
+      <div
+        x-show="open"
+        x-transition:enter-start="opacity-0 scale-90"
+        x-transition:enter="transition duration-200 transform ease"
+        x-transition:leave="transition duration-200 transform ease"
+        x-transition:leave-end="opacity-0 scale-90"
+        class="cookie-background"
+        style="min-width: 400px; max-width: 600px"
+      >
+        <div class="mb-4">
+          Este site utiliza cookies para garantir a melhor experiência possível.
+        </div>
+        <div class="flex justify-center">
+          <button
+            @click="open = false, setTimeout(() => open = true, 1500)"
+            class="cookie-accept-btn"
+          >
+            Aceitar Cookies
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./assets/js/mobile-navbar.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+    <script src="./assets/js/expand-image.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+  </body>
+</html>
